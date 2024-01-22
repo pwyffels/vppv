@@ -1,0 +1,19 @@
+Package: vppv
+Title: Ventilation induced Pulse Pressure Variation
+Version: 0.0.0.9000
+Authors@R: 
+    person("Piet", "Wyffels", , "Piet.wyffels@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6035-4340"))
+Description: This package calcutates a hemodynamic parameter named VPPV. Ventilation induced Pulse Pressure Variation. An alternative for PPV in patients with Atrial Fibrillation.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    dplyr,
+    magrittr,
+    mgcv,
+    rlang
+Depends: 
+    R (>= 2.10)
+LazyData: true
