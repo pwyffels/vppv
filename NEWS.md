@@ -1,3 +1,3 @@
 # vppv (development version)
 
-* Initial CRAN submission.
+* Initial submission.
