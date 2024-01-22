@@ -1,6 +1,6 @@
 #' Ventilation induced Pulse Pressure Variation point estimate
 #'
-#' @param model_gam a mgcv::gam model build with the VPPV_gam function
+#' @param model_gam a mgcv::gam model build with the VPPV_gam function.
 #'
 #' @return value expressed in percent
 #' @export
