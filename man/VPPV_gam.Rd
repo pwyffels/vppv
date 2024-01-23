@@ -15,3 +15,12 @@ mgcv model
 \description{
 Making a GAM model
 }
+\examples{
+## using the right formal for the data
+b <- afib
+colnames(b) <- c('TIME', 'rr0','rr1','pp')
+## assuming a MVR of 12 cycles per minute
+dat <- VPPV_frame(b, TIME,rr0,rr1,pp, 12)
+model_gam <- VPPV_gam(dat)
+summary(model_gam)
+}

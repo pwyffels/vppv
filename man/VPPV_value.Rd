@@ -7,11 +7,19 @@
 VPPV_value(model_gam)
 }
 \arguments{
-\item{model_gam}{a mgcv::gam model build with the VPPV_gam function}
+\item{model_gam}{a mgcv::gam model build with the VPPV_gam function.}
 }
 \value{
 value expressed in percent
 }
 \description{
 Ventilation induced Pulse Pressure Variation point estimate
+}
+\examples{
+b <- afib
+colnames(b) <- c('TIME', 'rr0','rr1','pp')
+## assuming a MVR of 12 cycles per minute
+dat <- VPPV_frame(b, TIME,rr0,rr1,pp, 12)
+model_gam <- VPPV_gam(dat)
+VPPV_value(model_gam)
 }

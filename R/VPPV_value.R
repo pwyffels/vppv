@@ -8,6 +8,13 @@
 #' @importFrom stats coef
 #'
 #' @examples
+#' b <- afib
+#' colnames(b) <- c('TIME', 'rr0','rr1','pp')
+#' ## assuming a MVR of 12 cycles per minute
+#' dat <- VPPV_frame(b, TIME,rr0,rr1,pp, 12)
+#' model_gam <- VPPV_gam(dat)
+#' VPPV_value(model_gam)
+
 VPPV_value <- function( model_gam){
   smooth <- model_gam$smooth[[3]]
   x = seq(0,1,length=100)
